@@ -1,0 +1,1005 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#"
+     xml:base="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#flows -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#flows">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#flowsFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#flowsFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#flowsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#flowsTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#usedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#usedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#uses"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Asset"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataStore"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ExternalEntity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Process"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#uses">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataStore"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ExternalEntity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Process"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Asset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Asset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Asset">
+        <rdfs:label xml:lang="en">Asset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow">
+        <rdfs:label xml:lang="en">Data Flow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataStore">
+        <rdfs:label xml:lang="en">Data Store</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ExternalEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ExternalEntity">
+        <rdfs:label xml:lang="en">External Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Hardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Hardware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Process">
+        <rdfs:label xml:lang="en">Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ArchivedArtifacts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ArchivedArtifacts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildAutomationTool"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow17"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Archived Artifacts</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Build -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Build">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildAutomationTool"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow17"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow18"/>
+        <rdfs:label xml:lang="en">Build</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildAutomationServer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildAutomationServer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Hardware"/>
+        <rdfs:label xml:lang="en">Build Automation Server</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildAutomationTool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildAutomationTool">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Process"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildAutomationServer"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildAutomationTool"/>
+        <id>P-3</id>
+        <rdfs:label xml:lang="en">Build Automation Tool</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildRepository -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildRepository">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataStore"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildRepositoryServer"/>
+        <id>S-3</id>
+        <rdfs:label xml:lang="en">Build Repository</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildRepositoryServer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildRepositoryServer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Hardware"/>
+        <rdfs:label xml:lang="en">Build Repository Server</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildAutomationTool"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow15"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow17"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow19"/>
+        <rdfs:label xml:lang="en">Build Specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ConcreteTestCases -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ConcreteTestCases">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow4"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Concrete Test Cases</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ProjectManager"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <id>F-1</id>
+        <rdfs:label xml:lang="en">Data Flow 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Developer"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SoftwareDevelopmentTools"/>
+        <id>F-10</id>
+        <rdfs:label xml:lang="en">Data Flow 10</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SoftwareDevelopmentTools"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SourceCodeRepository"/>
+        <id>F-11</id>
+        <rdfs:label xml:lang="en">Data Flow 11</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SourceCodeRepository"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Tester"/>
+        <id>F-12</id>
+        <rdfs:label xml:lang="en">Data Flow 12</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Developer"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SourceCodeRepository"/>
+        <id>F-13</id>
+        <rdfs:label xml:lang="en">Data Flow 13</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flowsFrom rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SourceCodeRepository"/>
+        <flowsTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildAutomationTool"/>
+        <id>F-14</id>
+        <rdfs:label xml:lang="en">Data Flow 14</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildAutomationTool"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ReleaseManager"/>
+        <id>F-15</id>
+        <rdfs:label xml:lang="en">Data Flow 15</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildAutomationTool"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestAutomationEngineer"/>
+        <id>F-16</id>
+        <rdfs:label xml:lang="en">Data Flow 16</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildAutomationTool"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildRepository"/>
+        <id>F-17</id>
+        <rdfs:label xml:lang="en">Data Flow 17</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flowsFrom rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#BuildRepository"/>
+        <flowsTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestExecutionTool"/>
+        <id>F-18</id>
+        <rdfs:label xml:lang="en">Data Flow 18</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestAutomationEngineer"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestExecutionTool"/>
+        <id>F-19</id>
+        <rdfs:label xml:lang="en">Data Flow 19</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManager"/>
+        <id>F-2</id>
+        <rdfs:label xml:lang="en">Data Flow 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Developer"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestExecutionTool"/>
+        <id>F-20</id>
+        <rdfs:label xml:lang="en">Data Flow 20</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestExecutionTool"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Tester"/>
+        <id>F-21</id>
+        <rdfs:label xml:lang="en">Data Flow 21</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestExecutionTool"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <id>F-22</id>
+        <rdfs:label xml:lang="en">Data Flow 22</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Tester"/>
+        <id>F-3</id>
+        <rdfs:label xml:lang="en">Data Flow 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DomainExpert"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <id>F-4</id>
+        <rdfs:label xml:lang="en">Data Flow 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <id>F-5</id>
+        <rdfs:label xml:lang="en">Data Flow 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flowsFrom rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Tester"/>
+        <flowsTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestDataGenerator"/>
+        <id>F-6</id>
+        <rdfs:label xml:lang="en">Data Flow 6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flowsFrom rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DomainExpert"/>
+        <flowsTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestDataGenerator"/>
+        <id>F-7</id>
+        <rdfs:label xml:lang="en">Data Flow 7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flowsFrom rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestDataGenerator"/>
+        <flowsTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <id>F-8</id>
+        <rdfs:label xml:lang="en">Data Flow 8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SoftwareDevelopmentTools"/>
+        <flows rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Tester"/>
+        <id>F-9</id>
+        <rdfs:label xml:lang="en">Data Flow 9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Developer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Developer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ExternalEntity"/>
+        <id>E-4</id>
+        <rdfs:label xml:lang="en">Developer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DomainExpert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DomainExpert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ExternalEntity"/>
+        <id>E-5</id>
+        <rdfs:label xml:lang="en">Domain Expert</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#EnvironmentDescription -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#EnvironmentDescription">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow4"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Environment Description</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ImprovementsReport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ImprovementsReport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow1"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Improvements Report</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#LogicalTestCases -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#LogicalTestCases">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow4"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Logical Test Cases</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#OrganizationalPolicy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#OrganizationalPolicy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow1"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Organizational Policy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ProjectManager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ProjectManager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ExternalEntity"/>
+        <id>E-1</id>
+        <rdfs:label xml:lang="en">Project Manager</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ReleaseManager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ReleaseManager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ExternalEntity"/>
+        <id>E-6</id>
+        <rdfs:label xml:lang="en">Release Manager</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Simulation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Simulation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow21"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow4"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestExecutionTool"/>
+        <rdfs:label xml:lang="en">Simulation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SoftwareDevelopmentTools -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SoftwareDevelopmentTools">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Process"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SoftwareDevelopmentTools"/>
+        <id>P-2</id>
+        <rdfs:label xml:lang="en">Software Development Tools</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SourceCode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SourceCode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow11"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow12"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow13"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow14"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SoftwareDevelopmentTools"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SourceCodeRepository"/>
+        <rdfs:label xml:lang="en">Source Code</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SourceCodeRepository -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SourceCodeRepository">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataStore"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SourceCodeRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SourceCodeRepositoryServer"/>
+        <id>S-2</id>
+        <rdfs:label xml:lang="en">Source Code Repository</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SourceCodeRepositoryServer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#SourceCodeRepositoryServer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Hardware"/>
+        <rdfs:label xml:lang="en">Source Code Repository Server</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestAutomationEngineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestAutomationEngineer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ExternalEntity"/>
+        <id>E-7</id>
+        <rdfs:label xml:lang="en">Test Automation Engineer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestCompletionReport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestCompletionReport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow1"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Test Completion Report</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestConditions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestConditions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Test Conditions</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestData -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestData">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow6"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow7"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow8"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestDataGenerator"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <rdfs:label xml:lang="en">Test Data</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestDataGenerator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestDataGenerator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Process"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestDataGenerator"/>
+        <id>P-4</id>
+        <rdfs:label xml:lang="en">Test Data Generator</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestExecutionTool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestExecutionTool">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Process"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestExecutionTool"/>
+        <id>P-5</id>
+        <rdfs:label xml:lang="en">Test Execution Tool</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestIncidentReport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestIncidentReport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Test Incident Report</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestIssues -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestIssues">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow1"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Test Issues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataStore"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepositoryServer"/>
+        <id>S-1</id>
+        <rdfs:label xml:lang="en">Test Management Repository</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepositoryServer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepositoryServer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Hardware"/>
+        <rdfs:label xml:lang="en">Test Management Repository Server</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementServer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementServer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Hardware"/>
+        <rdfs:label xml:lang="en">Test Management Server</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Process"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementServer"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <id>P-1</id>
+        <rdfs:label xml:lang="en">Test Management Tool</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ExternalEntity"/>
+        <id>E-2</id>
+        <rdfs:label xml:lang="en">Test Manager</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestPlan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestPlan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow1"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Test Plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestProcedureDescription -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestProcedureDescription">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Test Procedure Description</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestReport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestReport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Test Report</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestResults -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestResults">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow19"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow20"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow21"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow22"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestExecutionTool"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Test Results</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestStatusReport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestStatusReport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow4"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Test Status Report</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestStrategy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestStrategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow1"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow2"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Test Strategy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestSuites -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestSuites">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow3"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#DataFlow5"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementRepository"/>
+        <usedBy rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#TestManagementTool"/>
+        <rdfs:label xml:lang="en">Test Suites</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Tester -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Tester">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#ExternalEntity"/>
+        <id>E-3</id>
+        <rdfs:label xml:lang="en">Tester</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Document"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Hardware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/DFD#Software"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
