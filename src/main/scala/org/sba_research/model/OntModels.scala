@@ -10,9 +10,9 @@ object OntModels {
 
   def apply(config: Config): OntModels = {
 
-    def createModel(path: String) = {
+    def createModel(fileName: String) = {
       val m = ModelFactory.createOntologyModel(OntModelSpec.OWL_LITE_MEM)
-      m.read(path)
+      m.read(getClass.getResourceAsStream(s"/$fileName"), "adt")
       m
     }
 

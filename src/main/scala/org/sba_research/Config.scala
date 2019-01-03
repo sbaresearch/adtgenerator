@@ -11,15 +11,13 @@ object Config {
 
     val adtNs = conf.getString("adt.ns")
     val adtFileName = conf.getString("adt.fileName")
-    val adtPath = getClass.getResource(s"/$adtFileName").toString
 
     val dfdNs = conf.getString("dfd.ns")
     val dfdFileName = conf.getString("dfd.fileName")
-    val dfdPath = getClass.getResource(s"/$dfdFileName").toString
 
     val outputPath = conf.getString("outputPath")
 
-    this ((adtPath, adtNs), (dfdPath, dfdNs), outputPath)
+    this ((adtFileName, adtNs), (dfdFileName, dfdNs), outputPath)
   }
 
 }

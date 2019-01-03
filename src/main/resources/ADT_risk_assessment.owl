@@ -312,7 +312,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AtClient">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode12"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode135"/>
         <rdfs:label xml:lang="en">At Client</rdfs:label>
     </owl:NamedIndividual>
     
@@ -322,7 +322,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AtKDC">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode13"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode136"/>
         <rdfs:label xml:lang="en">At KDC</rdfs:label>
     </owl:NamedIndividual>
     
@@ -455,7 +455,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#BypassIntegrityChecker">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode55"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode138"/>
         <rdfs:label xml:lang="en">Bypass Integrity Checker</rdfs:label>
     </owl:NamedIndividual>
     
@@ -561,7 +561,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ChangeManagement">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode10"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode131"/>
         <rdfs:label xml:lang="en">Change Management</rdfs:label>
     </owl:NamedIndividual>
     
@@ -617,7 +617,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ConsumeApplicationResource">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode104"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode132"/>
         <rdfs:label xml:lang="en">Consume Application Resource</rdfs:label>
     </owl:NamedIndividual>
     
@@ -627,7 +627,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ConsumeFundamentalResource">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode105"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode133"/>
         <rdfs:label xml:lang="en">Consume Fundamental Resource</rdfs:label>
     </owl:NamedIndividual>
     
@@ -838,7 +838,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DoSProcess">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode112"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode134"/>
         <rdfs:label xml:lang="en">DoS Process</rdfs:label>
     </owl:NamedIndividual>
     
@@ -925,6 +925,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#EnsureConfidentiality -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#EnsureConfidentiality">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode87"/>
+        <rdfs:label xml:lang="en">Ensure Confidentiality</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ExceedCapacity -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ExceedCapacity">
@@ -967,7 +977,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#FederationIssues">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode9"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode142"/>
         <rdfs:label xml:lang="en">Federation Issues</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1196,7 +1206,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#KnowledgeBasedAuthentication">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AndNode1"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode130"/>
         <rdfs:label xml:lang="en">Knowledge Based Authentication</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1317,6 +1327,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#LogsScattered">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode73"/>
         <rdfs:label xml:lang="en">Logs Scattered</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1357,6 +1368,86 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
         <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode91"/>
         <rdfs:label xml:lang="en">Metadata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateApplicationResourceConsumption -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateApplicationResourceConsumption">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode104"/>
+        <rdfs:label xml:lang="en">Mitigate Application Resource Consumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateAttacksAgainstClientsToObtainCredentials -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateAttacksAgainstClientsToObtainCredentials">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode12"/>
+        <rdfs:label xml:lang="en">Mitigate Attacks Against Clients To Obtain Credentials</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateAttacksAgainstKDCToObtainCredentials -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateAttacksAgainstKDCToObtainCredentials">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode13"/>
+        <rdfs:label xml:lang="en">Mitigate Attacks Against KDC To Obtain Credentials</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateAttacksAtTransitToObtainCredentials -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateAttacksAtTransitToObtainCredentials">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode8"/>
+        <rdfs:label xml:lang="en">Mitigate Attacks At Transit To Obtain Credentials</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateChangeManagementAttacks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateChangeManagementAttacks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode10"/>
+        <rdfs:label xml:lang="en">Mitigate Change Management Attacks</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateDoSProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateDoSProcess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode112"/>
+        <rdfs:label xml:lang="en">Mitigate DoS Process</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateFundamentalResourceConsumption -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateFundamentalResourceConsumption">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode105"/>
+        <rdfs:label xml:lang="en">Mitigate Fundamental Resource Consumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateIntegrityCheckerBypass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateIntegrityCheckerBypass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode55"/>
+        <rdfs:label xml:lang="en">Mitigate Integrity Checker Bypass</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1413,7 +1504,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#NoConfidentiality">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode87"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode141"/>
         <rdfs:label xml:lang="en">No Confidentiality</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1920,12 +2011,142 @@
     
 
 
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode130 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode130">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ProtectKBA"/>
+        <rdfs:label xml:lang="en">Or Node 130</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode131 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode131">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateChangeManagementAttacks"/>
+        <rdfs:label xml:lang="en">Or Node 131</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode132 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode132">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateApplicationResourceConsumption"/>
+        <rdfs:label xml:lang="en">Or Node 132</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode133 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode133">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateFundamentalResourceConsumption"/>
+        <rdfs:label xml:lang="en">Or Node 133</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode134 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode134">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateDoSProcess"/>
+        <rdfs:label xml:lang="en">Or Node 134</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode135 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode135">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateAttacksAgainstClientsToObtainCredentials"/>
+        <rdfs:label xml:lang="en">Or Node 135</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode136 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode136">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateAttacksAgainstKDCToObtainCredentials"/>
+        <rdfs:label xml:lang="en">Or Node 136</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode137 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode137">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#PreventPredictableCreds"/>
+        <rdfs:label xml:lang="en">Or Node 137</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode138 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode138">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateIntegrityCheckerBypass"/>
+        <rdfs:label xml:lang="en">Or Node 138</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode139 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode139">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ProtectPhysicalAccess"/>
+        <rdfs:label xml:lang="en">Or Node 139</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode14 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode14">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
         <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#BruteForceDetection"/>
         <rdfs:label xml:lang="en">Or Node 14</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode140 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode140">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MitigateAttacksAtTransitToObtainCredentials"/>
+        <rdfs:label xml:lang="en">Or Node 140</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode141 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode141">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#EnsureConfidentiality"/>
+        <rdfs:label xml:lang="en">Or Node 141</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode142 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode142">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ResolveFederationIssues"/>
+        <rdfs:label xml:lang="en">Or Node 142</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2460,15 +2681,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode6 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode6">
-        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
-        <rdfs:label xml:lang="en">Or Node 6</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode60 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode60">
@@ -2811,8 +3023,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode88">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#MessageProtectionAddons"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#Tunneling"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#EnsureConfidentiality"/>
         <rdfs:label xml:lang="en">Or Node 88</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2995,7 +3206,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#PhysicalAccess">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode57"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode139"/>
         <ADT:successProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.188</ADT:successProbability>
         <rdfs:label xml:lang="en">Physical Access</rdfs:label>
     </owl:NamedIndividual>
@@ -3028,7 +3239,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#PredictableCreds">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrConnector"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode18"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode137"/>
         <rdfs:label xml:lang="en">Predictable Creds</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3039,6 +3250,16 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#Preplay">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
         <rdfs:label xml:lang="en">Preplay</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#PreventPredictableCreds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#PreventPredictableCreds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode18"/>
+        <rdfs:label xml:lang="en">Prevent Predictable Creds</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3066,6 +3287,26 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#Process">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#TargetElement"/>
         <rdfs:label xml:lang="en">Process</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ProtectKBA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ProtectKBA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AndNode1"/>
+        <rdfs:label xml:lang="en">Protect KBA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ProtectPhysicalAccess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ProtectPhysicalAccess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode57"/>
+        <rdfs:label xml:lang="en">Protect Physical Access</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3262,6 +3503,16 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ResetPasswords">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
         <rdfs:label xml:lang="en">Reset Passwords</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ResolveFederationIssues -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#ResolveFederationIssues">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#DefenseNode"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode9"/>
+        <rdfs:label xml:lang="en">Resolve Federation Issues</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3678,7 +3929,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#Transit">
         <rdf:type rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#AttackNode"/>
-        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode8"/>
+        <ADT:connectedTo rdf:resource="http://www.semanticweb.org/adtgenerator/ontologies/2018/10/ADT#OrNode140"/>
         <rdfs:label xml:lang="en">Transit</rdfs:label>
     </owl:NamedIndividual>
     
