@@ -159,3 +159,7 @@ SELECT ?countermeasure ?pCountermeasure ?cost ?attack ?pAttack
 	}
 ORDER BY DESC(?pAttack) ?pCountermeasure ?cost
 ```
+
+## How to Cite
+
+If you use ADTGenerator in your research, please consider citing our [Computers & Security (85)](http://www.sciencedirect.com/science/article/pii/S0167404818314482) publication. Feel free to use the paper's [BibTeX entry](misc/Eckhart2019.bib).
